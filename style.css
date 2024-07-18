@@ -1,0 +1,41 @@
+/* style.css */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
+
+/* Base Styles */
+html, 
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Inconsolata', monospace;
+    background-color: #e7e7ea; /* Light neutral background */
+}
+
+/* Button Styles */
+.container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 10; /* Ensure button is above the scene */
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8em 1em;
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    cursor: pointer;
+    background-color: #00bcdd; /* Blue background */
+    color: white;
+    transition: all 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.btn:hover {
+    background-color: #0099bb; /* Darker blue on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
